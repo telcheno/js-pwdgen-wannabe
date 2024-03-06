@@ -29,6 +29,6 @@ I numeri numMin e numMax da il range nel quale sarà creato el numero aleatorio.
 numRandom = Math.floor(Math.random()*(numMax - numMin + 1) + numMin);
 
 //varibile con la concatenazione dei dati del del utente e il numero aleatorio
-let password = "nome+cognome+colore+numRandom" //string
+let password = '"' + nome + cognome + colore + numRandom + '"'; //string
 
-alert("Questa è al tua password fatta con Javascript " + password)
+alert("Questa è al tua password fatta con Javascript " + password + "😉👍") //strign
