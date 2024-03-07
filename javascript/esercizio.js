@@ -13,9 +13,12 @@ let numRandom;
 // asegnazione di un valore alle variabili con il operatore di asegnazione "="
 // con il "prompt" si assegna il valore del utente
 
-nome = prompt("Ciao inserisci il tuo nome"); //string
-cognome = prompt("Adeso inserisci il tuo cognome"); //string
-colore = prompt("Ora inserisci il tuo colore preferito"); //string
+nome = prompt("Ciao inserisci il tuo nome"); //string | null
+console.log(nome);
+cognome = prompt("Adeso inserisci il tuo cognome"); //string | null
+console.log(cognome);
+colore = prompt("Ora inserisci il tuo colore preferito"); //string | null
+console.log(colore);
 
 // dichiarazione dei numeri per il range del numero aliatorio
 let numMin = 101; // number
@@ -27,8 +30,10 @@ Il metodo "Math.floor()" elimina decimale,
 I numeri numMin e numMax da il range nel quale sarà creato el numero aleatorio.
 */
 numRandom = Math.floor(Math.random()*(numMax - numMin + 1) + numMin);
+console.log(numMin);
 
 //varibile con la concatenazione dei dati del del utente e il numero aleatorio
 let password = '"' + nome + cognome + colore + numRandom + '"'; //string
+console.log(password);
 
 alert("Questa è al tua password fatta con Javascript " + password + "😉👍") //strign
